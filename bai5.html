@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array01 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let array02 = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+    let result = "";
+
+    function searchStar(arrA, arrB) {
+        let word = prompt("nhập sao");
+        for (let i = 0; i < arrA.length; i++) {
+            if (word === arrA[i]) {
+                result = arrB[i];
+            } else {
+                result = "không thấy chòm sao cần tìm";
+            }
+        }
+        return result;
+    }
+
+    alert(searchStar(array01, array02));
+
+</script>
+</body>
+</html>

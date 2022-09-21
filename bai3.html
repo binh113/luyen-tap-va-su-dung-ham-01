@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = parseInt(prompt("nhập số thứ nhất"));
+    let number2 = parseInt(prompt("nhập số thứ hai"));
+
+    function compare(num01, num02) {
+        if (num01 > num02) {
+            alert("số thứ nhất: " + num01 + ">" + "số thứ hai: " + num02);
+        } else {
+            let result = 0;
+            result = num01 + num02;
+
+            return result;
+        }
+    }
+
+    document.write(compare(number1, number2));
+</script>
+</body>
+</html>
